@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Society Manager</title>
+</head>
+
+<body>
+    <main>
+        <div id="landing">
+            <div id="landing-login">
+                <div id="landing-login-inner">
+
+                </div>
+            </div>
+            <div id="landing-transaction" style="text-align:center">
+                <div id="landing-transaction-inner">
+                    <div class="middle-space">
+                        <label for="key">Secret key : </label>
+                        <input type="number" id="key">
+                    </div>
+                    <div class="middle-space">
+                        <label for="transaction-amount">Amount : </label>
+                        <input type="number" id="transaction-amount">
+                    </div>
+                    <div class="middle-space">
+                        <label for="transaction-reason">Reason : </label>
+                        <input type="text" id="transaction-reason">
+                    </div>
+                    <div class="middle-space">
+                        <label for="transaction-type">Transaction Type : </label>
+                        <select id="transaction-type">
+                            <option name="dabit" value="dr">Expense</option>
+                            <option name="credit" value="cr">Income</option>
+                        </select>
+                    </div>
+
+                    <button id="submit" class="middle-space">Add Transaction</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
